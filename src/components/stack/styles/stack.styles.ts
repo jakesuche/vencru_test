@@ -16,6 +16,8 @@ type stackProps = {
   cursor?: string;
   minHeight?: string;
   radius?: string;
+  componentCss?:string;
+
 };
 
 export const StackWrapper = styled.div<stackProps>`
@@ -33,7 +35,7 @@ height:${({ height }) => height};
 min-height:${({ minHeight }) => minHeight};
 border-radius:${({ borderRadius }) => borderRadius};
 position:relative;
-=
+${({componentCss})=>componentCss};
 cursor: ${({ cursor }) => cursor};
 @media(max-width:768px){
     h1{

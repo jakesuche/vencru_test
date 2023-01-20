@@ -7,6 +7,7 @@ const Stack = ({
   direction,
   justifyContent,
   alignItems,
+  componentCss,
 
   ...restProps
 }: StackProps) => {
@@ -15,6 +16,7 @@ const Stack = ({
       justifyContent={justifyContent}
       direction={direction}
       alignItems={alignItems}
+      componentCss={componentCss}
       
       {...restProps}
     >

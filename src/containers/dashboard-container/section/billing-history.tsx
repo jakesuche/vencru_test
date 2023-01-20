@@ -8,11 +8,13 @@ import Table from "components/table";
 import Typography from "components/Typography";
 import { Color } from "utils/constants/color";
 import TableList from "utils/dummies/table-data-list";
+import { componentCss } from "../dashboad-container-style";
 
 const BillingHistory = () => {
   return (
     <Row>
       <Stack
+        componentCss={componentCss}
         alignItems="center"
         margin="2rem 0"
         direction="row"
