@@ -7,7 +7,7 @@ import { IconWrapper, LabelWrapper } from "./avarta-label-style";
 export const AvartaLabel = () => {
   return (
     <LabelWrapper>
-      <img src="/assets/images/avarta.svg" alt="profile picture" />
+      <img src="/assets/images/avarta.svg" alt="profile" />
       <Stack gap="5px"  >
         <Typography weight="500" size="14px" color={Color.grey900}>
           Olivia Rhye
