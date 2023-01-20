@@ -87,11 +87,29 @@ export const SLinkContainer = styled.div<Props>`
   border-radius: ${variables.borderRadius};
   padding: 0 ${variables.smSpacing};
   animation: 1s smooth;
+  position: relative;
   margin: ${({ margin }) => (margin ? margin : "0.5rem 0.5rem")};
   :hover {
     background-color:${Color.grey50};
-    }
+    
+  };
+  .bagde{
+   height: 20px;
+    width: 31px;
+    position: absolute;
+    right: 14px;
+    top: 9px;
+    font-size: 12px;
+    background: ${Color.grey100};
+    color: ${Color.grey900};
+    weight:500;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 16px;
+    
   }
+
 `;
 
 export const SLink = styled.a<Props>`

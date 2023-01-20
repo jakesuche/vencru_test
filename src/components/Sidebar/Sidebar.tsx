@@ -1,5 +1,4 @@
 import {
-
   SLink,
   SLinkContainer,
   SLinkIcon,
@@ -30,14 +29,17 @@ const Sidebar = () => {
           <SLinkIcon>
             <Logo />
           </SLinkIcon>
-          <Typography weight="500" size="1.2rem" color={Color.grey700}>Untitled UI</Typography>
+          <Typography weight="500" size="1.2rem" color={Color.grey700}>
+            Untitled UI
+          </Typography>
         </SLink>
       </SLogo>
       <Stack justifyContent="center" alignItems="center">
-      <Input placeholder="Search" maxWidth="200px" icon={<Search />} />
+        <Input placeholder="Search" maxWidth="200px" icon={<Search />} />
       </Stack>
-      {linksArray.map(({ icon, label, id }) => (
+      {linksArray.map(({ icon, label, id, show }) => (
         <SLinkContainer key={id}>
+          {show && <span className="bagde">10</span>}
           <SLink href="#" style={!openSidebar ? { width: `fit-content` } : {}}>
             <SLinkIcon>{icon}</SLinkIcon>
             <SLinkLabel>{label}</SLinkLabel>
@@ -53,14 +55,13 @@ const Sidebar = () => {
           </SLink>
         </SLinkContainer>
       ))}
-     <Stack justifyContent="center" alignItems="center">
-       <CardBox />
-     </Stack>
-     <Divider  gap="1.4rem 10px" />
-     <Stack  justifyContent="center" alignItems="center">
-     <AvartaLabel />
-     </Stack>
-    
+      <Stack justifyContent="center" alignItems="center">
+        <CardBox />
+      </Stack>
+      <Divider gap="1.4rem 10px" />
+      <Stack justifyContent="center" alignItems="center">
+        <AvartaLabel />
+      </Stack>
     </SSidebar>
   );
 };

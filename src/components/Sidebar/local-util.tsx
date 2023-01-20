@@ -18,6 +18,7 @@ export const linksArray = [
     label: "Dashboard",
     icon: <Dashboard />,
     id: 2,
+    show: true,
   },
   {
     label: "Projects",
